@@ -1,0 +1,29 @@
+import java.util.Scanner; 
+public class Main 
+{ 
+ public static void main(String[] args) 
+ { 
+ Scanner scanner = new Scanner(System.in); 
+ 
+ System.out.print("Введите первую строку: "); 
+ String a = scanner.nextLine(); 
+ 
+ System.out.print("Введите вторую строку: "); 
+ String b = scanner.nextLine(); 
+ 
+ System.out.print("Введите третью строку: "); 
+ String c = scanner.nextLine(); 
+ 
+ int g = 0; 
+ 
+ if (a.equals(b)) g++; 
+ if (a.equals(c)) g++; 
+ if (b.equals(c)) g++; 
+ 
+ if (g == 1) 
+ System.out.println("Yes"); 
+ 
+ else 
+ System.out.println("No"); 
+ } 
+} 
