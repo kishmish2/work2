@@ -1,0 +1,25 @@
+import java.util.Random; 
+public class Main 
+{ 
+ public static void main(String[] args) 
+ { 
+ Random random = new Random(); 
+ 
+ int hour = 7; 
+ int minute = 30; 
+ int second = 0; 
+ 
+ int hour1 = random.nextInt(24); 
+ int minute1 = random.nextInt(60); 
+ int second1 = random.nextInt(60); 
+ 
+ int Prosnylsya = hour1 * 3600 + minute1 * 60 + second1; 
+ int Vstat = hour * 3600 + minute * 60 + second; 
+ 
+ if (Vstat <= Prosnylsya) 
+ System.out.println("Петя успел на уроки!"); 
+ 
+ else 
+ System.out.println("Петя опоздал на уроки."); 
+ } 
+} 
