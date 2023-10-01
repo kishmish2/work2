@@ -1,0 +1,40 @@
+import java.util.Scanner; 
+public class Main 
+{ 
+ public static void main(String[] args) 
+ { 
+ Scanner scanner = new Scanner(System.in); 
+ 
+ System.out.print("Введите кол-во часов: "); 
+ int a = scanner.nextInt(); 
+ 
+ System.out.print("Введите кол-во минут: "); 
+ int b = scanner.nextInt(); 
+ 
+ System.out.println("Прошло секунд = " + (a * 3600 + b * 60)); 
+ } 
+} 
+ 
+
+
+
+
+
+import java.util.Scanner; 
+public class Main 
+{ 
+ public static void main(String[] args) 
+ { 
+ Scanner scanner = new Scanner(System.in); 
+ 
+ System.out.print("Введите кол-во секунд: "); 
+ int a = scanner.nextInt(); 
+ 
+ int a1 = a / 3600; 
+ int a2 = a - a1 * 3600; 
+ int b = a2 / 60; 
+ int a3 = a2 - b * 60; 
+ 
+ System.out.println("Часов = " + a1 + " Минут = " + b + " Секунд = " + a3); 
+ } 
+} 
