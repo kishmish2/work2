@@ -1,0 +1,24 @@
+import
+
+java.util.Scanner; 
+ 
+public class Main 
+{ 
+ public static void main(String[] args) 
+{ 
+ Scanner scanner = new Scanner(System.in); 
+ 
+ int n = scanner.nextInt(); 
+ int m = scanner.nextInt(); 
+ int x = scanner.nextInt(); 
+ int y = scanner.nextInt(); 
+ 
+ int minX = Math.min(x, n - x); 
+ 
+ int minY = Math.min(y, m - y); 
+ 
+ int MinDistance = Math.min(minX, minY); 
+ 
+ System.out.println("Минимальное расстояние: " + MinDistance); 
+ } 
+}
